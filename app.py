@@ -599,7 +599,6 @@ with tab2:
 #             st.plotly_chart(fig_scatter, use_container_width=True)
 
 with tab3:
-    st.subheader("Company Comparison Dashboard")
     
     # Load all company data and calculate metrics
     with st.spinner("Loading and analyzing all companies..."):
