@@ -494,8 +494,7 @@ with tab2:
         
         # Display basic info
         period_text = f"Year {selected_year}" if selected_year != "All Years" else "All Available Data"
-        st.markdown(f"<div class='highlight-box'><strong>Analysis Period:</strong> {period_text}</div>", unsafe_allow_html=True)
-    
+        
     # Display split information if applicable
     if selected_company in SPLIT_DATA:
         st.markdown("#### Note: Splits!")
