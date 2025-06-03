@@ -432,21 +432,20 @@ company_files = {
 tab1, tab2, tab3 = st.tabs(["Overview", "Company Analysis", "Compare All"])
 
 with tab1:
-    st.subheader("Executive Summary")
+    st.subheader("MSE Companies Analysis Report")
     
     col1, col2 = st.columns([2, 1])
     
     with col1:
         st.markdown("""
-        **Mongolian Stock Exchange Companies Analysis Report**
         
         This comprehensive analysis covers 18 companies listed on the Mongolian Stock Exchange (MSE) 
-        from the "Хувьцаат компани 1-р ангилал" category. Our analysis focuses on:
+        from the "Хувьцаат компани 1-р ангилал" category. This analysis focuses on:
         
         - Growth Analysis: Stock price performance over time
         - Volatility Assessment: Risk measurement through price fluctuations  
         - Trading Volume: Market liquidity and investor interest
-        - Temporal Analysis: Year-over-year performance tracking
+        - Year-over-year performance tracking
         """)
     
     with col2:
@@ -457,7 +456,7 @@ with tab1:
                 <li>Total Return</li>
                 <li>Daily Volatility</li>
                 <li>Trading Volume</li>
-                <li>Price Range Analysis</li>
+                <li>Price Range</li>
             </ul>
         </div>
         """, unsafe_allow_html=True)
@@ -663,4 +662,4 @@ with tab3:
             
 # Footer
 st.markdown("---")
-st.markdown("*MSE Companies Analysis Tool*")
+st.markdown("*MSE Companies Analysis*")
